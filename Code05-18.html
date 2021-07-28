@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	function pythagoras(width, height) {
+		return Math.sqrt(width * width + height * height);
+	}
+	
+	var width = prompt("삼각형의 밑변의 길이를 입력해주세요.");
+	var height = prompt("삼각형의 높이를 입력해주세요.");
+	
+	alert("삼각형의 빗변의 길이는 " + pythagoras(width,height) + " 입니다.");
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>

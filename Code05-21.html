@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	function pythagoras(width, height) {
+		function square(x) {
+			return x*x;
+		}
+		return Math.sqrt(square(width)  + square(height));
+	}
+	
+	alert(pythagoras(3, 4));
+	
+	function square(width, height, hypotenuse) {
+		if(width * width + height * height ==  hypotenuse * hypotenuse) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
