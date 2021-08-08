@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	function returnFunction() {
+		return function () {
+		 alert('Hello Function...!');
+		}
+	}
+	
+	// 객체도 반환하니.. 함수는 당연 반환할 수 있겠지..
+	// 함수의 함수니까.. 괄호가 2개래
+	returnFunction()();
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
