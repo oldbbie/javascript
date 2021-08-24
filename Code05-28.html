@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	function test(name) {
+		var output = 'Hello ' + name + '...!';
+		return function() {
+	 		alert(output);
+		}
+	}
+	
+	// test 의 리턴값이 함수이므로
+	// (익명)함수가 변수에 대입된다.
+	var test_1 = test('Web');
+	var test_2 = test('JavaScript');
+	
+	
+	// 변수가 함수이므로 ()를 넣어서 실행한다.
+	test_1();
+	test_2();
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
