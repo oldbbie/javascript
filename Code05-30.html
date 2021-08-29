@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	var intervalID = setInterval(function(){
+		alert('<p>' + new Date() + '</p>');
+	}, 1000);
+	
+	setTimeout(function() {
+		clearInterval(intervalID);
+	}, 10000);
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
