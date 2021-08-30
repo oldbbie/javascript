@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	alert('A');
+	setTimeout(function(){
+		alert('B');
+	}); // 기다림이 필요한 코드(함수)는 일반 코드가 다 끝난 후에 실행
+	alert('C');
+	
+	// heap 이라는 공간에 변수를 저장
+	// stack 이라는 공간에서 코드 실행(기다릴 필요가 없는 코드들부터 순서대로 실행) - 한번에 한줄 실행 // 병렬처리,동시실행 안됨
+	// 기다림이 필요한 코드(시간함수,이벤트함수)는 대기실에서 자기 순서를 기달림
+	// queue 기다림이 끝난 코드들이 있는곳 stack이 모두 실행되면(공간이 빌때까지 코드를 순서대로 대기) 코드를 stack으로 보냄
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
