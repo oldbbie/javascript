@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>JavaScript</title>
+<script>
+	// 클로저를 이용해 데이터를 setTimeout 함수에 저장해두고 실행
+	for( var i = 0; i < 3;  i++) {
+		(function (closed_i) {
+			setTimeout(function () {
+				alert(closed_i);
+			}, 0);
+		})(i);
+	}
+</script>
+</head>
+<body>
+	<div class="wrap app">
+	</div>
+</body>
+</html>
